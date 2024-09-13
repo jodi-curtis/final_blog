@@ -1,0 +1,193 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #822e81;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+  margin-bottom: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin-right: 10px;
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 3px;
+  background-color: #D5A2D4;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
+
+/* Flash messages container */
+.flashes {
+  display: block;
+  width: 80%;
+  margin: auto auto 20px auto;
+  pointer-events: none; /* Disable the hover effect */
+}
+
+/* Flash message */
+.flashes li {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  color: #300505;
+  background-color: #777;
+}
+
+/* List styling */
+ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+li {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.post-meta {
+  flex-grow: 1;
+  margin-top: -20px;
+  font: italic 14px/1.4 Georgia, serif;
+  background-color: #f5f5f5;
+}
+
+.post-content {
+  flex-grow: 1;
+  margin-bottom: 10px;
+  white-space: pre-wrap; /* Preserve line breaks */
+}
+
+/* Form Styles */
+form {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-gap: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+textarea {
+  height: 10em;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #fd7e14;
+}
+
+/* Post Styles */
+p {
+  margin-bottom: 10px;
+}
+
+/* Edit Styles */
+button[type="submit"] {
+  background-color: #28a745;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+button[type="submit"].danger {
+  background-color: #dc3545;
+}
+
+button[type="submit"].danger:hover {
+  background-color: #a13b45;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  body {
+    font-size: 14px;
+  }
+
+  /* Example: Adjust the layout or styles of specific elements */
+  form {
+    margin-bottom: 10px;
+  }
+}

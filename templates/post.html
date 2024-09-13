@@ -1,0 +1,11 @@
+{% set title = post.title %}
+{% extends 'base.html' %}
+
+{% block content %}
+    <p class="post-meta">By {{ post.author }} (Posted on {{ post.created_at.strftime('%Y-%m-%d %H:%M') }})</p>
+    <p class="post-content">{{ post.content }}</p>
+
+    {% if allow_edit %}
+        <a href="{{ url_for('edit_page', post_id=post.id) }}">Edit Post</a>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,10 @@
+{% set title = "Delete Post" %}
+{% extends 'base.html' %}
+
+{% block content %}
+<p>Are you sure you want to delete this post?</p>
+<!-- [html-validate-disable attribute-allowed-values] -->
+<form action="{{ url_for('delete_action', post_id=post.id) }}" method="POST">
+    <button type="submit">Delete</button>
+</form>
+{% endblock %}
